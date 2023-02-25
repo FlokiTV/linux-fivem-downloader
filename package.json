@@ -4,9 +4,12 @@
     "description": "",
     "main": "download.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node download.js"
-    },
+      "start": "start.bat",
+      "download": "node bin/download-artifacts.js",
+      "install-cfx": "node bin/download-cfx-server-data.js",
+      "download-cfg": "node bin/download-cfg.js",
+      "full": "npm run download && npm run install-cfx && npm run download-cfg"
+  },
     "author": "",
     "license": "ISC",
     "dependencies": {

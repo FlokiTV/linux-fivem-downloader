@@ -6,7 +6,7 @@ let URL = "https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/"
 axios.get(URL)
   .then(response => {
     const $ = cheerio.load(response.data)
-    let u = URL + $("a").attr("href").replace("./", "")
+    let u = URL + $("a.is-active").attr("href").replace("./", "")
     download(u, () => {
       extract('fx.tar.xz', () => {
         delFile('fx.tar.xz', () => {
