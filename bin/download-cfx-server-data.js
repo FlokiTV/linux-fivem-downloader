@@ -47,6 +47,10 @@ download(url, () => {
         if (err) console.error(err);
         else
           fs.rmSync("cfx-server-data-master", { recursive: true, force: true });
+        let start = `./run.sh +exec server.cfg`;
+        fs.writeFile("start.sh", start, () => {
+          console.log("DONE");
+        });
         console.log("DONE");
       }
     );

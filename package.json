@@ -4,17 +4,17 @@
     "description": "",
     "main": "download.js",
     "scripts": {
-      "start": "start.bat",
-      "download": "node bin/download-artifacts.js",
-      "install-cfx": "node bin/download-cfx-server-data.js",
-      "download-cfg": "node bin/download-cfg.js",
-      "full": "npm run download && npm run install-cfx && npm run download-cfg"
-  },
+        "start": "start.bat",
+        "download": "node bin/download-artifacts.js",
+        "install-cfx": "node bin/download-cfx-server-data.js",
+        "download-cfg": "node bin/download-cfg.js",
+        "full": "npm run download && npm run install-cfx && npm run download-cfg"
+    },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "axios": "^0.27.2",
-      "cheerio": "^1.0.0-rc.12"
+        "axios": "^0.27.2",
+        "cheerio": "^1.0.0-rc.12",
+        "decompress": "^4.2.1"
     }
-  }
-  
+}

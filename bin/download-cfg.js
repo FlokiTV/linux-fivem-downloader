@@ -12,10 +12,6 @@ axios
         fs.writeFile("server.cfg", txt, () => {
           console.log("DONE");
         });
-        let start = `start ./artifacts/FXServer.exe +exec server.cfg`;
-        fs.writeFile("start.bat", start, () => {
-          console.log("DONE");
-        });
       }
     });
   });
