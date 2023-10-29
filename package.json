@@ -2,9 +2,7 @@
     "name": "linux-fivem-downloader",
     "version": "1.0.0",
     "description": "",
-    "main": "download.js",
     "scripts": {
-        "start": "start.bat",
         "download": "node bin/download-artifacts.js",
         "install-cfx": "node bin/download-cfx-server-data.js",
         "download-cfg": "node bin/download-cfg.js",
