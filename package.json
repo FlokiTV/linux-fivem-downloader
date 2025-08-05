@@ -1,19 +1,14 @@
 {
-    "name": "linux-fivem-downloader",
-    "version": "1.0.0",
-    "description": "",
-    "bin": "index.js",
-    "scripts": {
-        "download": "node bin/download-artifacts.js",
-        "install-cfx": "node bin/download-cfx-server-data.js",
-        "download-cfg": "node bin/download-cfg.js",
-        "full": "npm run download && npm run install-cfx && npm run download-cfg"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "axios": "^0.27.2",
-        "cheerio": "^1.0.0-rc.12",
-        "decompress": "^4.2.1"
-    }
+  "name": "bun",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
 }
